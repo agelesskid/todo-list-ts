@@ -2,10 +2,6 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 
-const list = document.querySelector<HTMLUListElement>('#todo-list')
-const form = document.querySelector<HTMLFormElement>('#todo-form')
-const input = document.querySelector<HTMLInputElement>('#todo-input')
-
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -15,9 +11,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
     <h1>Vite + TypeScript</h1>
-    <ul id="todo-list">
-      <li>123</li>
-    </ul>
+    <ul id="todo-list"></ul>
     <form class="card" id="todo-form">
       <input id="todo-input" type="text" />
       <button id="counter" type="submit">Add</button>
@@ -27,3 +21,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </p>
   </div>
 `
+
+
+
