@@ -43,8 +43,8 @@ function addListItem(task: Task){
   checkbox.checked = task.completed
   label.append(checkbox, task.title)
   item.append(label)
+  item.id = 'todo-item'
   list?.append(item)
-  
 }
 
 function saveTasks() {
